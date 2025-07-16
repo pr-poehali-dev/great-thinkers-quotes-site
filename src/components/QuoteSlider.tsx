@@ -78,7 +78,9 @@ const QuoteSlider = () => {
   return (
     <div className="w-full">
       {/* Quote Cards */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+      <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 transition-all duration-500 ${
+        currentPage === 1 ? 'p-8 bg-gray-600 rounded-2xl' : ''
+      }`}>
         {currentQuotes.map((quote) => (
           <Card 
             key={quote.id} 
