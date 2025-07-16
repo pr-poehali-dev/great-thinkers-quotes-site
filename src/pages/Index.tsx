@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import QuoteSlider from "@/components/QuoteSlider";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-100">
       {/* Hero Section with Mountains Background */}
       <div 
         className="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
@@ -37,35 +37,15 @@ const Index = () => {
             Цитаты
           </h2>
           <p className="text-xl text-gray-600 font-['Open_Sans'] max-w-2xl mx-auto">
-            Здесь будут размещены мудрые высказывания великих мыслителей
+            Мудрые высказывания великих мыслителей и философские размышления
           </p>
         </div>
 
-        {/* Quote Cards Placeholder */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {[1, 2, 3].map((i) => (
-            <Card key={i} className="p-8 hover:shadow-lg transition-shadow duration-300 animate-scale-in">
-              <div className="mb-6">
-                <Icon name="Quote" size={48} className="text-gray-300 mb-4" />
-              </div>
-              <p className="text-gray-600 font-['Open_Sans'] text-lg mb-6 leading-relaxed">
-                Место для цитаты великого мыслителя №{i}
-              </p>
-              <div className="flex items-center justify-between">
-                <span className="text-black font-['Montserrat'] font-semibold">
-                  Автор цитаты
-                </span>
-                <Button variant="outline" size="sm">
-                  <Icon name="Heart" size={16} className="mr-2" />
-                  Сохранить
-                </Button>
-              </div>
-            </Card>
-          ))}
-        </div>
+        {/* Quote Slider */}
+        <QuoteSlider />
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-16">
           <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-8 py-3 text-lg font-['Montserrat']">
             <Icon name="Plus" size={20} className="mr-2" />
             Добавить цитату
