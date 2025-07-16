@@ -20,9 +20,8 @@ const Index = () => {
             мыслителей 8 б
           </h2>
           <div className="w-24 h-1 bg-white mx-auto mb-8"></div>
-          <p className="text-xl md:text-2xl font-light font-['Open_Sans'] max-w-2xl mx-auto px-4">
-            Мудрость веков в каждой строке
-          </p>
+          <p className="text-xl md:text-2xl font-light font-['Open_Sans'] max-w-2xl mx-auto px-4">тут будут цитаты великих людей которые вложили свои мысли в это так же называемую капсулу времени.
+(все совпадения случайны, люди выдуманы, автор сайта засекречен)</p>
         </div>
         
         {/* Scroll indicator */}
